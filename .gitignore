@@ -1,5 +1,5 @@
 /.alpackages
 /.altestrunner
 /.snapshots
-/.vscode/.alcache
-/.vscode/.altemplates
+/.vscode/*
+!/.vscode/launch.json
