@@ -2,6 +2,9 @@
   "id": "f6e56f54-d3f1-4d76-94d7-02c064de91fc",
   "name": "Postnet Barcode Test",
   "publisher": "Integrato",
+  "help": "https://integrato.freshdesk.com/support/tickets/new/",
+  "url": "https://integratotech.com/",
+  "EULA": "https://integratotech.com/MSA/",
   "version": "1.0.0.0",
   "platform": "23.0.0.0",
   "application": "23.4.0.0",
@@ -19,5 +22,6 @@
   "runtime": "12.0",
   "features": [
     "NoImplicitWith"
+    , "TranslationFile"
   ]
 }

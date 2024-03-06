@@ -15,36 +15,6 @@
     <ReportSection>
       <Body>
         <ReportItems>
-          <Textbox Name="Name">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>="Name: " &amp; First(Fields!Name.Value, "DataSet_Result")</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Name</rd:DefaultName>
-            <Top>0.26389in</Top>
-            <Left>0in</Left>
-            <Height>0.25in</Height>
-            <Width>2.30208in</Width>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <VerticalAlign>Middle</VerticalAlign>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
           <Textbox Name="PostCode">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
@@ -52,23 +22,85 @@
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>="Post Code: " &amp; First(Fields!PostCode.Value, "DataSet_Result")</Value>
+                    <Value>=First(Fields!Post_Code.Value, "DataSet_Result")</Value>
                     <Style />
                   </TextRun>
                 </TextRuns>
-                <Style />
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
-            <rd:DefaultName>PostCode</rd:DefaultName>
-            <Top>0.51389in</Top>
-            <Left>0in</Left>
+            <Top>0.26389in</Top>
             <Height>0.25in</Height>
-            <Width>2.30208in</Width>
+            <Width>3.71991in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <VerticalAlign>Middle</VerticalAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Barcode_Code39">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!GetBarcode_Code39.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <FontFamily>=First(Fields!Code39FontFamily.Value, "DataSet_Result")</FontFamily>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>1.19271in</Top>
+            <Height>0.25in</Height>
+            <Width>3.71991in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
+              <FontFamily>IDAutomationHC39M</FontFamily>
+              <FontSize>12pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="PostCode_Label">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Post Code:</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Height>0.25in</Height>
+            <Width>3.71991in</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
               <VerticalAlign>Middle</VerticalAlign>
               <PaddingLeft>2pt</PaddingLeft>
               <PaddingRight>2pt</PaddingRight>
@@ -76,149 +108,173 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
-          <Textbox Name="Barcode_GlobalVar">
+          <Textbox Name="Barcode_Postnet">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>=First(Fields!Barcode_GlobalVar.Value, "DataSet_Result")</Value>
-                    <Style />
+                    <Value>=First(Fields!Barcode_Postnet.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <FontFamily>=First(Fields!PostnetFontFamily.Value, "DataSet_Result")</FontFamily>
+                    </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
-            <rd:DefaultName>Barcode_GlobalVar</rd:DefaultName>
-            <Top>1.22569in</Top>
-            <Left>0.5923in</Left>
-            <Height>0.25in</Height>
-            <Width>3.71991in</Width>
-            <ZIndex>2</ZIndex>
-            <Style>
-              <FontFamily>IDAutomationPOSTNET</FontFamily>
-              <FontSize>12pt</FontSize>
-            </Style>
-          </Textbox>
-          <Textbox Name="Barcode_Procedure">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=First(Fields!Barcode_Procedure.Value, "DataSet_Result")</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Barcode_Procedure</rd:DefaultName>
-            <Top>1.94618in</Top>
-            <Left>0.5923in</Left>
+            <Top>2.10938in</Top>
             <Height>0.25in</Height>
             <Width>3.71991in</Width>
             <ZIndex>3</ZIndex>
             <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
               <FontFamily>IDAutomationPOSTNET</FontFamily>
               <FontSize>12pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
             </Style>
           </Textbox>
-          <Textbox Name="Textbox1">
+          <Textbox Name="Barcode_Code39_Label">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Barcode (Global):</Value>
-                    <Style />
+                    <Value>Barcode: Code 39</Value>
+                    <Style>
+                      <FontFamily />
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
-            <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>0.94791in</Top>
+            <Top>0.62327in</Top>
             <Height>0.25in</Height>
-            <Width>1.76166in</Width>
+            <Width>3.71991in</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
+              <TopBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </TopBorder>
+              <FontSize>12pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
             </Style>
           </Textbox>
-          <Textbox Name="Textbox2">
+          <Textbox Name="Barcode_Postnet_Label">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>Barcode (Procedure):</Value>
-                    <Style />
+                    <Value>Barcode: Postnet</Value>
+                    <Style>
+                      <FontWeight>Bold</FontWeight>
+                    </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
-            <rd:DefaultName>Textbox1</rd:DefaultName>
-            <Top>1.65451in</Top>
+            <Top>1.55469in</Top>
             <Height>0.25in</Height>
-            <Width>1.76166in</Width>
+            <Width>3.71991in</Width>
             <ZIndex>5</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
+              <TopBorder>
+                <Color>Black</Color>
+                <Style>Solid</Style>
+                <Width>1pt</Width>
+              </TopBorder>
+              <FontSize>12pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
             </Style>
           </Textbox>
-          <Textbox Name="No">
+          <Textbox Name="Barcode_Postnet_FontFamily">
             <CanGrow>true</CanGrow>
             <KeepTogether>true</KeepTogether>
             <Paragraphs>
               <Paragraph>
                 <TextRuns>
                   <TextRun>
-                    <Value>="No: " &amp; First(Fields!No.Value, "DataSet_Result")</Value>
-                    <Style />
+                    <Value>="Font Family: " + First(Fields!PostnetFontFamily.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <FontWeight>Normal</FontWeight>
+                    </Style>
                   </TextRun>
                 </TextRuns>
-                <Style />
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
               </Paragraph>
             </Paragraphs>
-            <rd:DefaultName>No</rd:DefaultName>
-            <Left>0in</Left>
+            <Top>1.80469in</Top>
             <Height>0.25in</Height>
-            <Width>2.30208in</Width>
+            <Width>3.71991in</Width>
             <ZIndex>6</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
+              <FontSize>12pt</FontSize>
               <VerticalAlign>Middle</VerticalAlign>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Barcode_Postnet_FontFamily2">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>="Font Family: " + First(Fields!Code39FontFamily.Value, "DataSet_Result")</Value>
+                    <Style>
+                      <FontWeight>Normal</FontWeight>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Center</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>0.87327in</Top>
+            <Height>0.25in</Height>
+            <Width>3.71991in</Width>
+            <ZIndex>7</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <FontSize>12pt</FontSize>
+              <VerticalAlign>Middle</VerticalAlign>
             </Style>
           </Textbox>
         </ReportItems>
-        <Height>2.26042in</Height>
+        <Height>2.44705in</Height>
         <Style />
       </Body>
-      <Width>6.5in</Width>
+      <Width>3.71991in</Width>
       <Page>
         <LeftMargin>0.25in</LeftMargin>
         <RightMargin>0.25in</RightMargin>
@@ -270,32 +326,20 @@ End Function
   <DataSets>
     <DataSet Name="DataSet_Result">
       <Fields>
-        <Field Name="No">
-          <DataField>No</DataField>
+        <Field Name="Post_Code">
+          <DataField>Post_Code</DataField>
         </Field>
-        <Field Name="Name">
-          <DataField>Name</DataField>
+        <Field Name="PostnetFontFamily">
+          <DataField>PostnetFontFamily</DataField>
         </Field>
-        <Field Name="Address">
-          <DataField>Address</DataField>
+        <Field Name="Barcode_Postnet">
+          <DataField>Barcode_Postnet</DataField>
         </Field>
-        <Field Name="City">
-          <DataField>City</DataField>
+        <Field Name="Code39FontFamily">
+          <DataField>Code39FontFamily</DataField>
         </Field>
-        <Field Name="County">
-          <DataField>County</DataField>
-        </Field>
-        <Field Name="PostCode">
-          <DataField>PostCode</DataField>
-        </Field>
-        <Field Name="Country_Region_Code">
-          <DataField>Country_Region_Code</DataField>
-        </Field>
-        <Field Name="Barcode_GlobalVar">
-          <DataField>Barcode_GlobalVar</DataField>
-        </Field>
-        <Field Name="Barcode_Procedure">
-          <DataField>Barcode_Procedure</DataField>
+        <Field Name="GetBarcode_Code39">
+          <DataField>GetBarcode_Code39</DataField>
         </Field>
       </Fields>
       <Query>

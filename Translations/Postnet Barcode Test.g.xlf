@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Postnet Barcode Test">
+    <body>
+      <group id="body">
+        <trans-unit id="Report 3401120056 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Postnet Example</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PostnetExampleINT - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3401120056 - Control 646257654 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sets the font used for Code39 barcode rendering.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PostnetExampleINT - Control Code39 Font Family - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3401120056 - Control 646257654 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code 39 Font Family</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PostnetExampleINT - Control Code39 Font Family - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3401120056 - Control 3660300303 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Used to test Barcode rendering.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PostnetExampleINT - Control Post Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3401120056 - Control 3660300303 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Post Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PostnetExampleINT - Control Post Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3401120056 - Control 2807379838 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sets the font used for Postnet barcode rendering.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PostnetExampleINT - Control Postnet Font Family - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 3401120056 - Control 2807379838 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Postnet Font Family</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report PostnetExampleINT - Control Postnet Font Family - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
